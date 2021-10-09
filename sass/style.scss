@@ -27,14 +27,23 @@ body {
 .sidebar{
     position: fixed;
     height:100%;
-    width:78px;
+    width:240px;
     background:$primary-color;
     padding: 6px 14px;
     transition: all 0.5s ease;
     
     &.active{
-        width: 240px;
+        width: 78px;
+
+        .logo-content{
+
+                .logo{
+                    opacity:0;
+                    pointer-events: none;
+                }
+        }
     }
+
     .logo-content{
 
         .logo{
@@ -43,25 +52,28 @@ body {
             height:50px;
             width:100%;
             align-items: center;
-            opacity: 0;
-
-                .logo-name {
-                    font-size:20px;
-                    font-weight:400;
-                }
+            pointer-events: none;
+            opacity:1;
+          
+              .logo-name {
+                font-size:20px;
+                font-weight:400;
+            }
         }
 
+        
         i {
             color:$secondary-color;
             font-size: 28px;
             margin-right: 5px;
         }
+
     }
 
     #btn {
         position: absolute;
         color:$secondary-color;
-        left: 90%;
+        left: 80%;
         top: 6px;
         font-size: 20px;
         height: 50px;
@@ -130,6 +142,7 @@ body {
             text-decoration: none;
             transition: all 0.4s ease;
             border-radius: 12px;
+            white-space: nowrap;
             
             &:hover{
                 color:$primary-color;
@@ -148,7 +161,7 @@ body {
          input {
             position: absolute;
             height:100%;
-            width: 50%;
+            width: 30%;
             left:0;
             top:0;
             border-radius: 12px;

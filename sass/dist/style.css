@@ -20,13 +20,17 @@ body {
 .sidebar {
   position: fixed;
   height: 100%;
-  width: 78px;
+  width: 240px;
   background: #11101D;
   padding: 6px 14px;
   transition: all 0.5s ease;
 }
 .sidebar.active {
-  width: 240px;
+  width: 78px;
+}
+.sidebar.active .logo-content .logo {
+  opacity: 0;
+  pointer-events: none;
 }
 .sidebar .logo-content .logo {
   color: #fff;
@@ -34,7 +38,8 @@ body {
   height: 50px;
   width: 100%;
   align-items: center;
-  opacity: 0;
+  pointer-events: none;
+  opacity: 1;
 }
 .sidebar .logo-content .logo .logo-name {
   font-size: 20px;
@@ -48,7 +53,7 @@ body {
 .sidebar #btn {
   position: absolute;
   color: #fff;
-  left: 90%;
+  left: 80%;
   top: 6px;
   font-size: 20px;
   height: 50px;
@@ -107,6 +112,7 @@ body {
   text-decoration: none;
   transition: all 0.4s ease;
   border-radius: 12px;
+  white-space: nowrap;
 }
 .sidebar a:hover {
   color: #11101D;
@@ -122,7 +128,7 @@ body {
 .sidebar input {
   position: absolute;
   height: 100%;
-  width: 50%;
+  width: 30%;
   left: 0;
   top: 0;
   border-radius: 12px;
