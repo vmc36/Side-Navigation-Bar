@@ -32,7 +32,7 @@ body {
     transition: all 0.5s ease;
     
     &.active{
-        width: 45px;
+        width: 50px;
 
      
 
@@ -70,7 +70,7 @@ body {
                 }
 
                 .bx-search{
-                    transition: none;
+                    left: 0;
                     display: block;
                     
                     &:hover{
@@ -248,7 +248,7 @@ body {
             outline:none;
             border:none;
             background: $primary-color;
-            padding-left: 48px;
+            padding-left: 50px;
             font-size: 18px;
             color:$secondary-color;
         }
